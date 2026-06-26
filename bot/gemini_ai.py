@@ -79,7 +79,7 @@ async def ask_gemini(message):
 
     response = client.models.generate_content(
         model="gemini-2.0-flash",
-        contents=PORTFOLIO_PROMPT + message
+        contents=PORTFOLIO_PROMPT +'\n'+ message
     )
 
     return response.text
