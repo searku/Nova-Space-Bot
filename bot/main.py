@@ -10,15 +10,9 @@ import content
 
 from gemini_ai import ask_gemini
 
-
-from aiohttp import ClientSession
-
-session = ClientSession()
-
 bot = Bot(
-    token=TOKEN,
-    session=session
-) 
+    token=TOKEN
+)
 
 dp = Dispatcher()
 
