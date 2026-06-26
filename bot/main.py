@@ -11,7 +11,15 @@ import content
 from gemini_ai import ask_gemini
 
 
-bot = Bot(token=TOKEN)
+from aiohttp import ClientSession
+
+session = ClientSession()
+
+bot = Bot(
+    token=TOKEN,
+    session=session
+) 
+
 dp = Dispatcher()
 
 
