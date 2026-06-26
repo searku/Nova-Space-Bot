@@ -73,16 +73,3 @@ GEMINI_KEY = "YOUR_GEMINI_API_KEY"
 Запустить:
 
 python main.py
-
-## Безопасность
-
-Секретные данные хранятся в файле `config.py`.
-
-Этот файл не загружается в GitHub с помощью:
-
-.gitignore
-
-
-Для других пользователей используется:
-
-config_example.py 
